@@ -141,7 +141,7 @@ body {
                 resultUp[i] = Math.floor(Math.random() * 6) + 1;
                 resultDown[i] = 7 - resultUp[i]; // opposite
                 setTimeout(function() {
-                    var rZ = Math.floor(Math.random() * 360);
+                    var rZ = Math.floor(Math.random() * 360) - 180;
                     die[i].style.webkitTransitionTimingFunction = 'cubic-bezier(0.390, 0.575, 0.565, 1.000)';
                     die[i].style.webkitTransform = 'translateZ(100px) translateX(' + x[i] / 2 + 'px) translateY('
                             + y[i] / 2 + 'px) rotateZ(' + rZ + 'deg)' + show[resultUp[i]];
